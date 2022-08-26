@@ -27,3 +27,28 @@
 
 - Main is the entry point for c programs. It is the *root* function that calls all other functions and makes possible the workflow of the program
 
+### How to print text using `printf`, `puts` and `putchar`
+
+- `printf`: displays formatted output to stdout (`scanf` is the reverse)
+- `puts`: writes the string a tailing new line to the console
+- `putchar`: writes the character `c` to standard output and returns the character that was written (`getchar` is the reverse)
+
+### How to get the size of a specific type using the unary operator `sizeof` 
+
+- Can be used to determine the amount of size any intrinsic type, union or struct takes in bytes
+
+### How to compile using `gcc`
+
+- `gcc filename` compiles the program and creates an executable file, which we can then run on our terminal
+
+### What is the default program name when compiling with `gcc` 
+
+- `a.out`
+
+### What is the official C coding style and how to check your code with betty-style 
+
+- Linux-kernel like coding style. We can install betty style and run our code against it
+
+### How does the `main` function influence the return value of the program
+
+- The return type of the function determines the return value of the program
