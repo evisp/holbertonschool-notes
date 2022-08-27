@@ -31,3 +31,32 @@
   - They focus on organizing objects rather than actions and data rather than logic.
 
 ## SQL Replication
+
+If your important data is stored in an SQL database, you can take advantage of some built-in replication features.
+
+### Master-Slave Replication
+
+- You have a main database server, which is referred to as the “master” server.
+- This server is responsible for performing all writes and updates.
+- The data from this server is copied continuously to a “slave” server.
+- This server can be be read from, but not written to.
+
+### Master-Master Replication
+
+- This configuration allows both servers to have “master” abilities.
+- This means that each server can accept writes and updates and will transfer the changes to the opposite server.
+- This configuration inherits the advantages of the master-slave setup, but also benefits from increased write performance if the writes are properly distributed by a load balancing mechanism.
+
+### Distribution as a Redundancy Alternative
+
+- Distributed systems offer many of the advantages of traditional redundant setups.
+- RAID 5 distributes data across a number of drives and also writes the parity of the data across each drive. This means that any kind of transaction can be “rebuilt” from combining the parity information on the other drives if a single drive dies
+
+## How To Install MySQL 5.7 on Ubuntu 20.04
+
+Follow the tutorials provides [here](https://computingforgeeks.com/how-to-install-mysql-on-ubuntu-focal/)
+or [here](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+
+## How To Set Up Replication in MySQL
+
+Follow the tutorial provided [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
