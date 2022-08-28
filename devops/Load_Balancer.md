@@ -22,7 +22,7 @@ of loads if the set of upstream servers changes.
 
 Read the link below 👇
 
-![HAProxy](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
+[](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
 
 ## Resources
 [What is load balancer and how it works?](https://www.nginx.com/resources/glossary/load-balancing/)
