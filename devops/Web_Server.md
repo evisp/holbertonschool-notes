@@ -42,7 +42,103 @@ Full details are provided [here](https://developer.mozilla.org/en-US/docs/Learn/
 - By default, Nginx on Ubuntu 16.04 has one server block enabled at `/var/www/html`
 - We will create a directory structure within `/var/www` for each of our sites.
 
-```bash
+```console
 sudo mkdir -p /var/www/example.com/html
 sudo mkdir -p /var/www/test.com/html
+```
+
+- We can use the `$USER` environmental variable to assign ownership to the account that we are currently signed in on
+
+```console
+sudo chown -R $USER:$USER /var/www/example.com/html
+sudo chown -R $USER:$USER /var/www/test.com/html
+```
+
+- We can change access rights accordingly using
+
+```console
+sudo chmod -R 755 /var/www
+```
+
+### Creating Sample Pages for Each Site
+
+- Let’s create a default page for each of our sites
+
+```console
+nano /var/www/example.com/html/index.html
+```
+
+- Inside the file, we’ll create a really basic file that indicates what site we are currently accessing
+
+```html
+<html>
+    <head>
+        <title>Welcome to Example.com!</title>
+    </head>
+    <body>
+        <h1>Success! The example.com server block is working!</h1>
+    </body>
+</html>
+```
+
+### Creating Server Block Files for Each Domain
+
+- Now that we have the content we wish to serve, we need to create the server blocks that will tell Nginx how to do this
+- Nginx contains one server block called `default` which we can use as a template for our own configurations
+
+#### Creating the First Server Block File
+
+- We create the file and open it with sudo privileges
+
+```console
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/example.com
+sudo nano /etc/nginx/sites-available/example.com
+```
+
+- First, we need to look at the listen directives. Only one of our server blocks on the server can have the `default_server` option enabled. This specifies which block should serve a request if the server_name requested does not match any of the available server blocks.
+- You can choose to designate one of your sites as the “`default`” by including the `default_server` option in the listen directive, or you can leave the default server block enabled
+- we’ll leave the default server block in place to serve non-matching requests, so we’ll remove the `default_server` from this and the next server block
+- The next thing we’re going to have to adjust is the document root, specified by the `root` directive. Point it to the site’s document root that you created:
+
+```console
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/example.com/html;
+
+}
+```
+
+- Next, we need to modify the server_name to match requests for our first domain
+
+```console
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/example.com/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name example.com www.example.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+```
+
+### Enabling your Server Blocks and Restart Nginx
+
+- We can do this by creating symbolic links from these files to the `sites-enabled` directory, which Nginx reads from during startup.
+
+```console
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/test.com /etc/nginx/sites-enabled/
+```
+
+- Restart Nginx to enable your changes:
+
+```console
+sudo systemctl restart nginx
 ```
