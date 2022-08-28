@@ -4,7 +4,7 @@
 
 - A **load balancer** acts as the *traffic cop* sitting in front of your servers and routing client requests across all servers capable of fulfilling those requests in a manner that maximizes speed and capacity utilization and ensures that no one server is overworked, which could degrade performance. 
   - If a single server goes down, the load balancer redirects traffic to the remaining online servers. When a new server is added to the server group, the load balancer automatically starts to send requests to it.
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/6cefdd14b2f8c36789cba132bd5a10d42d88a177.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220828%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220828T174633Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=38b41f9ec6ac495cbca82db437b5a3c754d4d3c538405a9d3714e377464f5f58)
+[Load-balancer](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/6cefdd14b2f8c36789cba132bd5a10d42d88a177.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220828%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220828T174633Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=38b41f9ec6ac495cbca82db437b5a3c754d4d3c538405a9d3714e377464f5f58)
 
 ### Load balancer functions
 - Distributes client requests or network load efficiently across multiple servers
