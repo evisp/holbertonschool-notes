@@ -169,3 +169,20 @@ sudo systemctl restart nginx
 | Put	      | Replaces all current representations of the target resource with the uploaded content.       |
 | Delete      | Removes all current representations of the target resource given by a URI        |
 | Connect     | Establishes a tunnel to the server identified by a given URI |
+
+## HTTP Redirection
+
+- Redirection is the process of forwarding one URL to a different URL.
+- A redirect is a way to send both users and search engines to a different URL from the one they originally requested
+- Types of redirect
+  - 301, "Moved Permanently"—recommended for SEO
+  - 302, "Found" or "Moved Temporarily"
+  - Meta Refresh
+
+## Not found HTTP response code
+
+- `HTTP 404`, `404 not found`, `404`, `404 error`, `page not found` or `file not found` error message is a hypertext transfer protocol (HTTP) standard response code, to indicate that the browser was able to communicate with a given server, but the server could not find what was requested
+
+## Log files on Linux
+
+- All logs are stored in `/var/log` directory under Ubuntu
