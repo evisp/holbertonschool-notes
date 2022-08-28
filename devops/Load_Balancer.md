@@ -17,3 +17,7 @@
 - **Hash** – Distributes requests based on a key you define, such as the client IP address or the request URL. NGINX Plus can optionally apply a consistent hash to minimize redistribution
 of loads if the set of upstream servers changes.
 - **IP Hash** – The IP address of the client is used to determine which server receives the request
+
+
+## Resources
+[What is load balancer and how it works?](https://www.nginx.com/resources/glossary/load-balancing/)
