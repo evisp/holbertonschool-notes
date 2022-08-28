@@ -142,3 +142,30 @@ sudo ln -s /etc/nginx/sites-available/test.com /etc/nginx/sites-enabled/
 ```console
 sudo systemctl restart nginx
 ```
+
+## Root and subdomain
+
+### What's an internet domain?
+
+- An internet domain is the identity or representation (in the form of letters) of an IP address
+- This is an example of a root domain: `mycompany.com`
+
+### What’s a subdomain?
+
+- This is an example of a subdomain: `home.mycompany.com`
+- A subdomain belongs to the root domain. The subdomain name comes before the root domain name and is separated from it by a dot
+
+### A path / subfolder
+
+- This is an example of a subdomain with a path: `home.mycompany.com/about`
+
+## HTTP Requests
+
+| Method      | Description |
+| ----------- | ----------- |
+| Get 	      | used to retrieve information from the given server using a given URI       |
+| Head	      | Same as GET, but transfers the status line and header section only        |
+| Post	      | A POST request is used to send data to the server        |
+| Put	      | Replaces all current representations of the target resource with the uploaded content.       |
+| Delete      | Removes all current representations of the target resource given by a URI        |
+| Connect     | Establishes a tunnel to the server identified by a given URI |
