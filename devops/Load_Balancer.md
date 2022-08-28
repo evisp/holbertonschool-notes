@@ -11,8 +11,8 @@
 - Provides the flexibility to add or subtract servers as demand dictates
 
 ### Load balancer algorithm
-- **Round Robin** - requests are distributed across the group of servers sequentially
-- **Least Connections** - a new request is sent to the server with the fewest current connections to clients. The relative computing capacity of each server is factored into determining which one has the least connections
+- **Round Robin** - Requests are distributed across the group of servers sequentially
+- **Least Connections** - A new request is sent to the server with the fewest current connections to clients. The relative computing capacity of each server is factored into determining which one has the least connections
 - **Least Time** – Sends requests to the server selected by a formula that combines the fastest response time and fewest active connections. Exclusive to NGINX Plus.
 - **Hash** – Distributes requests based on a key you define, such as the client IP address or the request URL. NGINX Plus can optionally apply a consistent hash to minimize redistribution
 of loads if the set of upstream servers changes.
