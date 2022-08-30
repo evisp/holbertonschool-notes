@@ -8,14 +8,14 @@
 - To get the address where a pointer is stored we use the `& operator.`
 - A pointer can only point to a variable of the type it is supposed to point to
 ### **Dereferencing**
- - The real power of pointers is that they can manipulate values stored at the memory address they point to. 
- - To do this, you can use the dereference `operator *.`
- - has a different meaning depending on the context
-  - At declaration, it is used to declare a variable of type pointer, e.g., `int *n`
-  - When used inside the code, it dereferenced pointers, e.g., `*n =88`
+	- The real power of pointers is that they can manipulate values stored at the memory address they point to. 
+	- To do this, you can use the dereference `operator *.`
+	- has a different meaning depending on the context
+		- At declaration, it is used to declare a variable of type pointer, e.g., `int *n`
+		- When used inside the code, it dereferenced pointers, e.g., `*n =88`
 ### **Pointers Arithmetic**
- - Another way to access different elements of an array, is to use this other notation: `*(var + x)`, where var is the name of an array, and `x` is the `(x+1)th` element
- - E.g.: `i[5]` will be the same as `*(i + 5)`
+- Another way to access different elements of an array, is to use this other notation: `*(var + x)`, where var is the name of an array, and `x` is the `(x+1)th` element
+- E.g.: `i[5]` will be the same as `*(i + 5)`
 
 ### What are arrays and how to use them
 - Arrays in C are contiguous memory areas that hold a number of values of the same type.

@@ -30,10 +30,10 @@
 ### What are structures, when, why and how to use them
 - A structure is a user-defined data type that allows to combine data items of different types/kinds
 - Structures can be defined in the global scope of the program (i.e., outside functions)
- - Example: `struct User {char * name; int age}`
- - Elements are accessed using . Example `User.name = “John”`
+	- Example: `struct User {char * name; int age}`
+	- Elements are accessed using . Example `User.name = “John”`
 - To access elements of a pointer to a structure, we have to **dereference the pointer and then access data using .**
- - A simpler way: **`use ->.`** Example **`User->name = “John”`**
+	- A simpler way: **`use ->.`** Example **`User->name = “John”`**
 
 ### How to use typedef
 - Typedef is used to provide a data type with a new name. Example **`typedef unsigned char byte`**

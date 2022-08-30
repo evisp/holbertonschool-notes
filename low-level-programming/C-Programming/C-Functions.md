@@ -15,7 +15,7 @@
 
 ### What is a prototype
 - Inclusions of functions without proper implementation inside the code, i.e., the forward declaration of a function
- - It tells the return type, number of arguments, order and data types of arguments
+	- It tells the return type, number of arguments, order and data types of arguments
 
 ### Scope of variables
 - Local variables can be used only inside their scope (e.g., function)

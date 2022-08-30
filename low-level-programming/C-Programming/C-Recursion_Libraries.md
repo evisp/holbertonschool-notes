@@ -10,8 +10,8 @@
 
 ### How to implement recursion
 - Since a recursive function is a function that calls itself, one must always consider 
- - **Base criteria (Base Case):** There must be at least one base criteria or condition, such that, when this condition is met the function stops calling itself recursively.
- - **Recursive Step:** the recursive calls should progress in such a way that each time a recursive call is made it comes closer to the base criteria.
+	- **Base criteria (Base Case):** There must be at least one base criteria or condition, such that, when this condition is met the function stops calling itself recursively.
+	- **Recursive Step:** the recursive calls should progress in such a way that each time a recursive call is made it comes closer to the base criteria.
 
 ### In what situations you should implement recursion
 - Recursion is made for solving problems that can be broken down into smaller, repetitive problems
