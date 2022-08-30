@@ -26,13 +26,13 @@
 ### **Learning Objectives**
 
 ### How to use arguments passed to your program
-- We can enhance the declaration of our main function into **int main(int argc, char *argv[]).** 
-- **argc** stands for arguments count, while **argv** is an array of pointers to the strings which are those arguments
-- When running our programs, we can pass a series of arguments. The first argument (count = 1, value = argv[0]) is always the name of the program.
+- We can enhance the declaration of our main function into **`int main(int argc, char *argv[]).`** 
+- **`argc`** stands for arguments count, while **`argv`** is an array of pointers to the strings which are those arguments
+- When running our programs, we can pass a series of arguments. The first argument `(count = 1, value = argv[0])` is always the name of the program.
 
 ### What are two prototypes of main that you know of, and in which case do you use one or the other
-- **int main (void)** does not take any arguments
-- **int main(int argc, char *argv[]) /**  **int main(int argc, char **argv)** allows to take multiple arguments
+- **`int main (void)`** does not take any arguments
+- **`int main(int argc, char *argv[]) /`**  **`int main(int argc, char **argv)`** allows to take multiple arguments
 
-### How to use `__`attribute`__`((unused)) or (void) to compile functions with unused variables or parameters
-- The compiler can warn if a variable is declared but is never referenced. The __attribute__((unused)) attribute informs the compiler to expect an unused variable, and tells it not to issue a warning.
+### How to use `__attribute__((unused))` or `(void)` to compile functions with unused variables or parameters
+- The compiler can warn if a variable is declared but is never referenced. The `__attribute__((unused))` attribute informs the compiler to expect an unused variable, and tells it not to issue a warning.
