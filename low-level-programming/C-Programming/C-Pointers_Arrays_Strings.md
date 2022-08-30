@@ -4,7 +4,7 @@
 
 ### What are pointers and how to use them
 - A pointer is simply **the address of a piece of data in memory**. A pointer variable is a variable that stores the address of that piece of data
-- Pointers are declared as: `var_type` `*var`; Variable var is a `pointer (*)` that points to a `var_type`. The value of var is a memory address holding a value of type `var_type`
+- Pointers are declared as: `var_type *var;` Variable var is a `pointer (*)` that points to a `var_type`. The value of var is a memory address holding a value of type `var_type`
 - To get the address where a pointer is stored we use the `& operator.`
 - A pointer can only point to a variable of the type it is supposed to point to
 ### **Dereferencing**
