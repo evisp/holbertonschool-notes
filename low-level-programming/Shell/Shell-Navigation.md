@@ -85,7 +85,7 @@
 - **`M-x name`**		invokes a command by its name
 
 ### How to undo
-**`C-/	C-_	C-x u`**	undo
+- **`C-/	C-_	C-x u`**	undo
 
 ### How to cancel half-entered commands
 - **`C-g`**			stop safely
@@ -123,8 +123,8 @@
 
 ### What is GitHub	
 - Github is one of the many services that provide
- - A git repository server to push to
- - A web UI and extra features
+	- A git repository server to push to
+	- A web UI and extra features
 
 ### What is the difference between Git and GitHub
 - Git is a source management system that comes with a command line. GitHub is a popular approach a version control system
@@ -457,18 +457,18 @@ Hidden files are denoted by a period `(.)` character. `ls-a` to list them
 ### **Expansions**
 ### What is expansion and how to use them
 - Expansions are a series of processes that happen when a command unfolds. Some examples of expansions are
- - Pathname expansion: e.g., **`echo *`**
- - Tilde expansion: e.g, **`echo ~foo`**
- - Arithmetic expansion: e.g., **`echo$((2+2))`**
- - Brace expansion: e.g., **`echo Front-{A, B, C}-back; echo number_{1..5}`**
- - Parameter expansion: store small chunks of data and give each of them a name
- - Command substitution allows us to use the output of a command as an expansion. 
+	- Pathname expansion: e.g., **`echo *`**
+	- Tilde expansion: e.g, **`echo ~foo`**
+	- Arithmetic expansion: e.g., **`echo$((2+2))`**
+	- Brace expansion: e.g., **`echo Front-{A, B, C}-back; echo number_{1..5}`**
+	- Parameter expansion: store small chunks of data and give each of them a name
+	- Command substitution allows us to use the output of a command as an expansion. 
 
 ### What is the difference between single and double quotes and how to use them properly
 - Quoting allows us to selectively suppress unwanted expansions
 - Double quotes: all special characters lose their meaning, except: **`$ \``**
- - Word-splitting, pathname expansions, tilde expansion and brace expansions **are suppressed**
- - Parameter / arithmetic / command expansions are carried out
+	- Word-splitting, pathname expansions, tilde expansion and brace expansions **are suppressed**
+	- Parameter / arithmetic / command expansions are carried out
 - Single quotes are used when we need to suppress all expansions
 
 ### How to do command substitution with **`$()`** and backticks
@@ -483,7 +483,12 @@ Hidden files are denoted by a period `(.)` character. `ls-a` to list them
 - How to temporarily disable an alias
 
 ### Other help pages
-- How to execute commands from a file in the current shell
-
-
-
+- How to execute commands from a file in the current shellShell Arithmetic
+How to perform arithmetic operations with the shell
+Shell arithmetic allows to perform mathematical operations inside the shell
+The alias Command
+How to create an alias
+How to list aliases
+How to temporarily disable an alias
+Other help pages
+How to execute commands from a file in the current shell
