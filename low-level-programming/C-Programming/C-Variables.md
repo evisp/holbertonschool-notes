@@ -16,7 +16,7 @@
 - `||` (OR) returns true if either of the conditions is true
 - `!` (NOT) reverses the state of operators
 
-###What the the relational operators and how to use them
+### What the the relational operators and how to use them
 - `==` checks if both values are equal
 - `!=` checks if values are different
 - `>` and `<` check if a value is larger or smaller than another
@@ -35,7 +35,7 @@
 ### How to use comments
 - Use comments wisely to describe what specific parts of the code are doing
 
-###How to declare variables of types char, int, unsigned int 
+### How to declare variables of types char, int, unsigned int 
 - **`type variable_name`**
 
 ### How to assign values to variables
@@ -56,5 +56,5 @@
 ### What is the ASCII character set
 - American Standard Code for Information Exchange
 
-### What are the purpose of the gcc flags -m32 and -m64 
+### What are the purpose of the **`gcc flags -m32 and -m64`** 
 - To compile 32 and 64 bit objects
