@@ -22,11 +22,11 @@
 - Global variables can be used everywhere in the program
 - Static variables allow the value to **persist between calls**
 
-###What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
+### What are the `gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89`
 
 ### What are header files and how to to use them with #include 
-- A header file is a file with extension **.h** which contains C function declarations and macro definitions to be shared between several source files
-By using **#include<header_file>** we are notifying the compiler about their usage. **#include “header_file”** is used if header`_`file is defined by ourselves
+- A header file is a file with extension `.h` which contains C function declarations and macro definitions to be shared between several source files
+By using `#include<header_file>` we are notifying the compiler about their usage. `#include “header_file”` is used if `header_file` is defined by ourselves
 
 ## Debugging
 
