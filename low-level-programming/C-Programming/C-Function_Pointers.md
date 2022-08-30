@@ -2,7 +2,7 @@
 
 ## Function pointers
 
-### **Learning Objectives
+### ** Learning Objectives **
 
 ### What are function pointers and how to use them
 - In C, we can have pointers to functions
