@@ -22,7 +22,7 @@
 - `>` and `<` check if a value is larger or smaller than another
 - `>=` and `<=` respectively check if a value is greater or equal to the other `/` smaller or equal to the other
 
-### What values are considered TRUE and FALSE in C
+### What values are considered **`TRUE`** and **`FALSE`** in C
 - `1` and `0`
 
 ### What are the boolean operators and how to use them
@@ -35,25 +35,25 @@
 ### How to use comments
 - Use comments wisely to describe what specific parts of the code are doing
 
-### How to declare variables of types char, int, unsigned int 
+### How to declare variables of **`types char, int, unsigned int`** 
 - **`type variable_name`**
 
 ### How to assign values to variables
 - **`variable_name = variable_value;`**
 
-### How to print the values of variables of type char, int, unsigned int with printf 
+### How to print the values of variables of **`type char, int, unsigned int with printf`** 
 - **`printf(“format”, arguments)`** where we can use `%d %c` for numbers and characters and then provide the arguments
 
-### How to use the while loop
+### How to use the **`while loop`**
 - `while (condition) {...blocks of code…}`
 
-### How to use variables with the while loop
+### How to use variables with the **`while loop`**
 - Variables can be used as part of the condition, but also within the block of statements
 
-### How to print variables using printf
+### How to print variables using **`printf`**
 - **`printf(“format”, arguments)`** where we can use `%d %c` for numbers and characters and then provide the arguments
 
-### What is the ASCII character set
+### What is the **`ASCII`** character set
 - American Standard Code for Information Exchange
 
 ### What are the purpose of the **`gcc flags -m32 and -m64`** 
