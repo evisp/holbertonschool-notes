@@ -195,7 +195,7 @@ Co-founder of Sun Microsystem
 
 ### How to quit vi
 
-##Shell
+## Shell
 
 ### **General**
 
@@ -222,7 +222,7 @@ Co-founder of Sun Microsystem
 ### How to navigate the filesystem
 - Using the above (and other) commands
 
-### What are the . and .. directories
+### What are the `.` and `..` directories
 - Current and parent directories
 
 ### What is the working directory, how to print it and how to change it
@@ -238,7 +238,7 @@ Co-founder of Sun Microsystem
 - Everything comes under the root directory; home contains user’s data
 
 ### What are the characteristics of hidden files and how to list them
-Hidden files are denoted by a period (.) character. `ls-a` to list them
+Hidden files are denoted by a period `(.)` character. `ls-a` to list them
 
 ### **Looking around**
 ### What do the commands ls, less, file do
@@ -285,7 +285,7 @@ Hidden files are denoted by a period (.) character. `ls-a` to list them
 ### How to use wildcards
 - `*`			any number of characters
 - `?`			any single character
-- `[characters]`		matches a predefined set of characters ([:alnum:])
+- `[characters]`		matches a predefined set of characters `([:alnum:])`
 - `[!characters]`	matches any character that is not part of the set
 
 ### **Working with commands**
@@ -313,7 +313,7 @@ Hidden files are denoted by a period (.) character. `ls-a` to list them
 - Start by reading the name, then the synopsis and move to the general description to understand how the command is executed and the arguments it receives
 
 ### What are man page sections
-- **Name		Synopsis	Description	Examples	Overview…**
+- **`Name`		`Synopsis`	`Description`	`Examples`	`Overview…`**
 
 ### What are the section numbers for User commands, System calls and Library functions
 - **User commands** 		1
@@ -404,7 +404,7 @@ Hidden files are denoted by a period (.) character. `ls-a` to list them
 
 ### How to combine commands and filters with redirections
 - Filters take standard input, perform an operation and send the result to standard output
- - E.g. **`sort, uniq, grep, fmt, pr, head, tail, tr, sed, awk`**
+	- E.g. **`sort,` `uniq,` `grep,` `fmt,` `pr,` `head,` `tail,` `tr,` `sed,` `awk`**
 - Use pipeline
 
 ### **Special Characters**
