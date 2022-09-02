@@ -9,7 +9,6 @@
 - Example: `from fibo import fib, fib2`
 - If the module name is followed by `as`, then the name following `as` is bound directly to the imported module.
   - `import fibo as fib`
-- 
 
 ## How to import functions from another file and how to use them
 
@@ -42,6 +41,16 @@ displayText()
 - The built-in function `dir()` is used to find out which names a module defines. It returns a sorted list of strings:
 
 ## How to prevent code in your script from being executed when imported
+
+- When you run a Python module with `python fibo.py <arguments>`
+the code in the module will be executed, just as if you imported it, but with the `__name__` set to `"__main__"`. That means that by adding this code at the end of your module:
+
+```Python
+if __name__ == "__main__":
+    import sys
+    fib(int(sys.argv[1]))
+```
+you can make the file usable as a script as well as an importable module, because the code that parses the command line only runs if the module is executed as the “main” file:
 
 ## How to use command line arguments with your Python programs
 
