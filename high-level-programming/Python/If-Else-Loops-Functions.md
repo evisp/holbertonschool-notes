@@ -40,7 +40,7 @@ else:
   - `# this is a block of comments\n`
   `# that runs on several lines`
 - Multi line comments, known as **docstrings** are wrapped inside triple-quote marks (`"""`)
-  - `""" This is a docstring documenting the declaration of a function """
+  - `""" This is a docstring documenting the declaration of a function """`
 
 ## How to affect values to variables
 
@@ -67,9 +67,9 @@ for w in words:
 
 - The `break` statement, like in `C`, breaks out of the innermost enclosing `for` or `while` loop.
 
-### How to use else clauses on loops
+### How to use `else` clauses on loops
 
-- Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the iterable (with `for`) or when the condition becomes `false` (with `while`), but not when the loop is terminated by a `break` statement.
+- Loop statements may have an `else` clause; it is executed when the loop terminates through exhaustion of the iterable (with `for`) or when the condition becomes `false` (with `while`), but not when the loop is terminated by a `break` statement.
 
 ```Python
 for n in range(2, 10):
@@ -81,7 +81,7 @@ for n in range(2, 10):
 	print(n, 'is a prime number')	    
 ```
 
-### What does the pass statement do, and when to use it
+### What does the `pass` statement do, and when to use it
 
 - The `pass` statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example:
 
