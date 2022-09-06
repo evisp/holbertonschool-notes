@@ -57,6 +57,8 @@ If your important data is stored in an SQL database, you can take advantage of s
 Follow the tutorials provides [here](https://computingforgeeks.com/how-to-install-mysql-on-ubuntu-focal/)
 or [here](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
-## How To Set Up Replication in MySQL
+## How To Set Up Replication in MySQL and Important links
 
-Follow the tutorial provided [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [How to install MySQL 5.7 on ubuntu](https://www.hackerxone.com/2022/05/04/how-install-mysql-57-ubuntu-2004-lts/)
+- [How to set up replication on MySQL](https://dev.to/ayekpleclemence/how-to-setup-mysql-5-7-replication-on-ubuntu-16-04-40lm)
+- [How to setup a primary replica infrastructure (task 4)](https://medium.com/@estebandelahoz/setup-a-primary-replica-infrastructure-using-mysql-5bcab77c352)
