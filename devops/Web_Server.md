@@ -186,3 +186,31 @@ sudo systemctl restart nginx
 ## Log files on Linux
 
 - All logs are stored in `/var/log` directory under Ubuntu
+
+## Get domain from .tech (task #2 from 0x0C. Web server project)
+
+- Go to Intranet and find **My tools**
+- **Coupons** then click `request my coupons` (It will show a text containing numbers and characters)
+- Click `.TECH domains` which will redirect you to [get.tech](get.tech) website
+- In the search box enter the domain you want for example (someone.tech) and press Enter
+- Click the shop icon 🛒 then click on **PROCEED**
+- Click **PROCEED** again in the end of the page
+- Remove **Privacy Protection**
+- In the **Have a coupon?** section click **Remove**
+- Copy the coupon code from the step 2
+- Enter the coupon code in the **Coupon code** box and click **Apply**
+- The total of domain will be $0.00
+- Then click **PLACE ORDER** button
+- Create an account
+- Confirm the email account
+
+## Configuration of DNS record of an A entry
+
+- Go to [get.tech](get.tech)
+- Login to your account
+- Click on **My account**
+- Enter your domain (e.g someone.tech) to **Jump to Domain** section then press Enter
+- Go to the end of the page
+- To the **DNS Management** section click on **Manage DNS**
+- Click **Add A Record** button
+- In the **Destination IPv4 Address** enter the IP address of your web-01 server then click **Add Record** button
