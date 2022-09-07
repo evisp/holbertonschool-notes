@@ -191,7 +191,7 @@ sudo systemctl restart nginx
 
 - Go to Intranet and find **My tools**
 - **Coupons** then click `request my coupons` (It will show a text containing numbers and characters)
-- Click `.TECH domains` which will redirect you to [get.tech](get.tech) website
+- Click `.TECH domains` which will redirect you to [get.tech](https://www.get.tech) website
 - In the search box enter the domain you want for example (someone.tech) and press Enter
 - Click the shop icon 🛒 then click on **PROCEED**
 - Click **PROCEED** again in the end of the page
@@ -206,7 +206,7 @@ sudo systemctl restart nginx
 
 ## Configuration of DNS record of an A entry
 
-- Go to [get.tech](get.tech)
+- Go to [get.tech](https://www.get.tech)
 - Login to your account
 - Click on **My account**
 - Enter your domain (e.g someone.tech) to **Jump to Domain** section then press Enter
