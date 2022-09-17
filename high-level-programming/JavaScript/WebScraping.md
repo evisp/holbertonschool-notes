@@ -1,5 +1,7 @@
 # Java Script - Web Scraping
 
+Follow [this link](https://stackoverflow.com/questions/16482600/node-js-cannot-find-module-request) for an answer on how to run the projects locally
+
 ## Working with JSON
 
 - JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax

@@ -1,0 +1,55 @@
+# AirBnB clone - Web framework
+
+## What is a web framework
+
+- A web framework is a software framework that is designed to support the development of web applications including web services, web resources and web API
+- frameworks offer a set of features that you can use to create a custom application
+
+### Types of Web frameworks
+
+- **Server-side Frameworks**
+  - The rules and architecture of the server-side frameworks permit you to create simple pages, landings and forms of different kinds.
+  - Server-side frameworks handle HTTP requests, database control and management, URL mapping, etc
+   - Example: `.NET, Django (Python), Express (JavaScript)`
+- **Client-side Frameworks**
+  - They function inside the browser. Therefore, you can enhance and implement new user interfaces
+  - Examples: `Angular, React.js, Vue.js`
+
+### Web application framework- Architecture
+
+- Most of the web frameworks depend on the MVC (Model-View-Controller) architecture.
+  - The Model comprises of all the data, business logic layers, its guidelines and functions
+  - The View is for the graphical representation of the data like graph or charts etc. It is the apps’ front-end
+  - The Controller translates the input data into the scope of commands of the previous ones
+
+## A Minimal Application with Flask
+
+- A minimal Flask application looks something like this:
+
+```Python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+```
+
+### HTML Escaping
+
+- When returning HTML, any user-provided values rendered in the output must be escaped to protect from injection attacks
+- HTML templates rendered with Jinja, will do this automatically.
+
+```Python
+from markupsafe import escape
+
+@app.route("/<name>")
+def hello(name):
+    return f"Hello, {escape(name)}!"
+```
+
+### Routing
+
+- Modern web applications use meaningful URLs to help users.
+- Use the `route()` decorator to bind a function to a URL.

@@ -1,0 +1,44 @@
+# Exceptions in Python
+
+- Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it.
+- Errors detected during execution are called exceptions
+- Exception types include: `ZeroDivisionError`, `NameError` and `TypeError`
+
+## Handling Exceptions
+
+- The `try` statement works as follows.
+  - the `try` clause (the statement(s) between the `try` and `except` keywords) is executed.
+  - If no exception occurs, the except clause is skipped and execution of the `try` statement is finished
+  - If an exception occurs during execution of the `try` clause, the rest of the clause is skipped
+- All exceptions inherit from `BaseException`, and so it can be used to serve as a wildcard
+- The `try … except` statement has an optional `else` clause, which, when present, must follow all except clauses.
+
+```Python
+for arg in sys.argv[1:]:
+    try:
+        f = open(arg, 'r')
+    except OSError:
+        print('cannot open', arg)
+    else:
+        print(arg, 'has', len(f.readlines()), 'lines')
+        f.close()
+```
+
+## Raising Exceptions
+
+- The `raise `statement allows the programmer to force a specified exception to occur. `raise NameError('HiThere')`
+
+##  Exception Chaining
+
+- The `raise` statement allows an optional from which enables chaining exceptions. For example: `raise RuntimeError from exc`
+
+## Defining Clean-up Actions
+
+- The `try` statement has another optional clause which is intended to define clean-up actions that must be executed under all circumstances. For example:
+
+```Python
+try:
+    raise KeyboardInterrupt
+finally:
+    print('Goodbye, world!')
+```
