@@ -1,3 +1,4 @@
+
 # Holberton School Notes
 
 This repository contains notes for the **Computer Science Foundations** program at *Holberton School*.
