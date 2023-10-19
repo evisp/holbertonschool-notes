@@ -45,4 +45,9 @@
 
 
 
+## 🌐 Applications
+
+## 🚀 Bringing Concepts to Life
+
+## 📚 Further information
 
