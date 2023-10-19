@@ -33,8 +33,6 @@
 
 ## 🌐 Applications
 
-## 🌐 Applications
-
 Pointers play a crucial role in programming by enabling:
 
 - **Dynamic Memory Management:** Pointers allow efficient allocation and deallocation of memory, which is essential for data structures like linked lists and dynamic arrays.
@@ -66,7 +64,139 @@ void reset_to_98(int *n)
 }
 ```
 
+### Finding the length of a string
 
+- Write a function that returns the length of a string
+
+```c
+#include "main.h"
+
+/**
+ * _strlen - Returns the length of a string
+ * @s: String to be measured
+ *
+ * Return: Length of the string
+ */
+int _strlen(char *s)
+{
+    int length = 0;
+
+    while (*s)
+    {
+        length++;
+        s++;
+    }
+
+    return length;
+}
+
+```
+
+### Reverse a string
+
+- Write a function that reverses a string
+
+```c
+#include "main.h"
+
+/**
+ * rev_string - Reverses a string
+ * @s: String to be reversed
+ */
+void rev_string(char *s)
+{
+    int length = 0;
+    int start = 0;
+    int end;
+	char temp;
+
+    while (s[length] != '\0')
+        length++;
+
+    end = length - 1;
+
+    while (start < end)
+    {
+        temp = s[start];
+        s[start] = s[end];
+        s[end] = temp;
+        start++;
+        end--;
+    }
+}
+```
+
+### Print half of a string
+
+- Write a function that prints the second half of a string, followed by a new line
+
+```c
+#include "main.h"
+
+/**
+ * puts_half - Prints the second half of a string
+ * @str: String to be printed
+ */
+void puts_half(char *str)
+{
+    int length = 0;
+    int n;
+
+    while (str[length] != '\0')
+        length++;
+
+    n = (length + 1) / 2;
+
+    while (str[n] != '\0')
+    {
+        _putchar(str[n]);
+        n++;
+    }
+
+    _putchar('\n');
+}
+
+```
+
+## Challenge
+
+Write a function that convert a string to an integer.
+
+- Prototype: `int _atoi(char *s)`;
+- The number in the string can be preceded by an infinite number of characters
+- You need to take into account all the `-` and `+` signs before the number
+- If there are no numbers in the string, the function must return `0`
+
+Can you write `C` code for the following pseudocode
+
+```
+Function _atoi(s)
+    Initialize result as 0
+    Initialize sign as 1
+    Initialize i as 0
+    
+    # Ignore leading white spaces
+    While s[i] is a white space
+        Increment i by 1
+        
+    # Check for a sign
+    If s[i] is '-'
+        Set sign to -1
+        Increment i by 1
+    Else If s[i] is '+'
+        Increment i by 1
+    
+    # Read the digits and convert to an integer
+    While s[i] is a digit
+        Multiply result by 10
+        Add (s[i] - '0') to result
+        Increment i by 1
+        
+    # Return the result with the appropriate sign
+    Return result * sign
+End Function
+
+```
 ## 📚 Further information
 
 ### What are arrays and how to use them
