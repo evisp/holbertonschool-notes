@@ -1,9 +1,11 @@
 # Shell Navigation
 
+## 🔑 Key Concepts
+
 ### How to navigate in an Unix system
 
 - `pwd` 			print working directory
-- `cd`			change directory 
+- `cd`				change directory 
 - `.`(dot)			refers to working directory
 - `..`(dot dot)		refers to the parent of the working directory
 
