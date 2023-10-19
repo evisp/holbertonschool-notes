@@ -199,17 +199,11 @@ End Function
 ```
 ## 📚 Further information
 
-### What are arrays and how to use them
-- Arrays in C are contiguous memory areas that hold a number of values of the same type.
-- To declare an array we use this syntax: type `var_name[number_of_elements];`
-- We refer to an element as `a[0], a[1], ..,` if a is the array name. Indexes are stored from 0 to n-1 where n is the length of the array
+- [Pointers in C by C-Programming](https://www.cprogramming.com/tutorial/c/lesson6.html)
 
-### What are the differences between pointers and arrays
-- an array is NOT a pointer, the variables we declare as arrays do not hold a memory address.
+- [Geeks for Geeks Pointers](https://www.geeksforgeeks.org/c-pointers/)
 
-### How to use strings and how to manipulate them
-- Strings are a list of characters
+#### ✨ Remember
 
-### Scope of variables
-
+You don't need to be a great programmer. Just a good programmer with great habits. 
 
