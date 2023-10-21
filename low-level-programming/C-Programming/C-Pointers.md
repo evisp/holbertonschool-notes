@@ -1,4 +1,4 @@
-# Pointers, Arrays and Strings
+# Pointers
 
 ## 🔑 Key Concepts
 
